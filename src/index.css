@@ -47,7 +47,7 @@
     border-right: 0.1em solid transparent;
     white-space: nowrap;
     width: 0;
-    animation: typing 1.2s steps(8, end) forwards, border 1.2s linear forwards;
+    animation: typing 1.2s steps(16, end) forwards, border 1.2s linear forwards;
 }
 
 .typewriter2 {
@@ -56,7 +56,7 @@
     border-right: 0.1em solid transparent;
     white-space: nowrap;
     width: 0;
-    animation: typing 2.2s steps(16, end) forwards, border 3s linear forwards;
+    animation: typing 2.2s steps(32, end) forwards, border 3s linear forwards;
     animation-delay: 1.5s;
 }
 
