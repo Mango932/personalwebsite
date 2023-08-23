@@ -31,10 +31,7 @@ function Summary() {
             <div className="h-80 w-1 bg-[#E9F8F9]"></div>
             <Fade right>
                 <div className="w-1/3">
-                    <img
-                        src={require("../img/program.png")}
-                        alt="Samuel Marchetti"
-                    />
+                    <img src={"./img/program.png"} alt="Image Program" />
                 </div>
             </Fade>
         </div>

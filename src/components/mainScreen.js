@@ -1,17 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import NavBar from "./NavBar";
 import Summary from "./Summary";
 import Projects from "./Projects";
 
-const mainScreen = () => {
-    const links = [
-        { name: "Home", icon: "house" },
-        { name: "Info", icon: "user" },
-        { name: "Projects", icon: "code" },
-        { name: "Skills", icon: "brain" },
-        { name: "Contact", icon: "envelope" },
-    ];
-
+const MainScreen = () => {
     const projects = [
         {
             name: "Life Counter App",
@@ -24,37 +16,62 @@ const mainScreen = () => {
                 "img/LCA4.png",
             ],
             imgLayout: "mobile",
+            github: "https://github.com/Mango932/LifeCounterMTG",
+        },
+        {
+            name: "Personal Website",
+            description:
+                "Website built using react framework with paralax effect and responsive hover animation as well as fade component scroll animations",
+            image: ["img/Personal1.png", "img/Personal2.png"],
+            github: "https://github.com/Mango932/personalwebsite",
         },
         {
             name: "Draco Constelation",
             description:
                 "Website built with html/js/css. Information about the draco constelation as well as a visual representation of the constelation with clickable stars",
-            image: [],
-        },
-        {
-            name: "Project 3",
-            description: "Project 3 Description",
-            image: [],
+            image: ["img/Draco1.png", "img/Draco2.png"],
+            imgLayout: "website",
+            github: "https://github.com/Mango932/draco_constellation",
         },
     ];
 
+    const navSummary = useRef(null);
+    const navProjects = useRef(null);
+
+    const links = [
+        { name: "Home", icon: "house", ref: "navHome" },
+        { name: "Info", icon: "user", ref: navSummary },
+        { name: "Projects", icon: "code", ref: navProjects },
+        { name: "Skills", icon: "brain", ref: "navSkills" },
+        { name: "Contact", icon: "envelope", ref: "navContact" },
+    ];
+
+    const handleScroll = (ref) => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <div className="">
-            <div className=" h-screen w-screen bg-[url('./img/spaceBg.jpg')] bg-cover center">
-                <NavBar links={links} />
-                <div className="absolute left-[10%] top-[40%]">
-                    <h1 className=" text-white font-mono typewriter">Hello,</h1>
-                    <h1 className=" text-6xl text-white font-mono typewriter2 h-[4.3rem]">
+            <div
+                className=" h-screen w-screen  bg-cover center bg-fixed"
+                style={{ backgroundImage: "url(img/spaceBg.jpg)" }}
+            >
+                <NavBar links={links} scroll={handleScroll} />
+                <div className="absolute left-[10%] top-[40%] font-bold font-mono text-white">
+                    <h1 className="  typewriter">Hello,</h1>
+                    <h1 className=" text-6xl  typewriter2 h-[4.3rem]">
                         I am Samuel Marchetti.
                     </h1>
                 </div>
             </div>
-            <div className="bg-black">
+            <div className="bg-black z-1" ref={navSummary}>
                 <Summary />
-                <Projects projects={projects} />
+                <div ref={navProjects}>
+                    <Projects projects={projects} />
+                </div>
             </div>
         </div>
     );
 };
 
-export default mainScreen;
+export default MainScreen;
