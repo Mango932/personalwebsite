@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import NavBar from "./NavBar";
 import Summary from "./Summary";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const MainScreen = () => {
     const projects = [
@@ -46,6 +47,17 @@ const MainScreen = () => {
         { name: "Contact", icon: "envelope", ref: "navContact" },
     ];
 
+    const skills = [
+        { name: "React", icon: "fa-brands fa-react", lvl: "80%" },
+        { name: "Node", icon: "fa-brands fa-node", lvl: "80%" },
+        { name: "JavaScript", icon: "fa-brands fa-js", lvl: "80%" },
+        { name: "HTML", icon: "fa-brands fa-html5", lvl: "90%" },
+        { name: "CSS", icon: "fa-brands fa-css3", lvl: "90%" },
+        { name: "python", icon: "fa-brands fa-python", lvl: "75%" },
+        { name: "Github", icon: "fa-brands fa-git-alt", lvl: "75%" },
+        { name: "java", icon: "fa-brands fa-java", lvl: "50%" },
+    ];
+
     const handleScroll = (ref) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
     };
@@ -69,6 +81,7 @@ const MainScreen = () => {
                 <div ref={navProjects}>
                     <Projects projects={projects} />
                 </div>
+                <Skills skills={skills} />
             </div>
         </div>
     );

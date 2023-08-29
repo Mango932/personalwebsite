@@ -14,7 +14,7 @@ function ProjectBox({
         <div className="w-96 h-[44rem] center m-10 hover:scale-[115%] transition-all flex-col group">
             <Fade bottom>
                 <div className=" w-full h-full flex center flex-col p-5 text-center bg-[#202124] duration-500 rounded-xl shadow-inner border-white border-2">
-                    <h1 className="text-[#ffffff] text-5xl mb-12 font-bold">
+                    <h1 className="text-[#ffffff] text-5xl mb-12 font-semibold">
                         {name}
                     </h1>
                     <p className="text-white mb-12 text-l">{description}</p>

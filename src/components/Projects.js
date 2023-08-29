@@ -6,9 +6,10 @@ function Projects({ projects }) {
     return (
         <div className="pt-48 pb-48 w-screen  flex flex-col items-center justify-center ">
             <Fade>
-                <h1 className="text-[#F36C5D] w-full text-center text-8xl mb-20 font-extrabold effect-box,kkk">
+                <h1 className="text-[#F36C5D] w-full text-center text-8xl mb-10 font-bold effect-box,kkk">
                     Projects
                 </h1>
+                <div className="w-1/3 h-1 bg-white mb-20"></div>
             </Fade>
             <div className="center">
                 {projects.map((project, index) => (
