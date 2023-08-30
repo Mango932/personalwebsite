@@ -9,9 +9,9 @@ function Projects({ projects }) {
                 <h1 className="text-[#F36C5D] w-full text-center text-8xl mb-10 font-bold effect-box,kkk">
                     Projects
                 </h1>
-                <div className="w-1/3 h-1 bg-white mb-20"></div>
+                <div className="w-[26rem] h-1 bg-white mb-20"></div>
             </Fade>
-            <div className="center">
+            <div className="center flex-wrap">
                 {projects.map((project, index) => (
                     <ProjectBox
                         name={project.name}

@@ -3,8 +3,8 @@ import Fade from "react-reveal/Fade";
 
 function Summary() {
     return (
-        <div className="h-[40rem] center relative flex ">
-            <div className=" w-1/3 center flex-col p-10">
+        <div className="h-[40rem] center relative flex flex-wrap">
+            <div className=" w-[40rem] center flex-col p-10 ">
                 <Fade top>
                     <p className="text-[#F36C5D] text-5xl text-center z-10 mb-10 font-bold">
                         Who am I?
@@ -14,7 +14,7 @@ function Summary() {
                     <p className="text-[#ffffff] text-xl text-center">
                         Passionate{" "}
                         <span className="font-bold">
-                            Fullstack Web Developer
+                            a Fullstack Web Developer
                         </span>{" "}
                         committed to crafting captivating websites, dynamic web
                         applications, and user-centric mobile solutions.
@@ -28,12 +28,16 @@ function Summary() {
                     </p>
                 </Fade>
             </div>
-            <div className="h-80 w-1 bg-[#E9F8F9]"></div>
-            <Fade right>
-                <div className="w-1/3">
-                    <img src={"./img/program.png"} alt="Image Program" />
-                </div>
-            </Fade>
+            <div className="h-80 w-1 hidden bg-[#E9F8F9] lg:block"></div>
+            <div className="w-[40rem] ">
+                <Fade right>
+                    <img
+                        src={"./img/program.png"}
+                        alt="Image Program"
+                        className="object-contain"
+                    />
+                </Fade>
+            </div>
         </div>
     );
 }

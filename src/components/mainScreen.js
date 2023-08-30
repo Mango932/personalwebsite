@@ -48,11 +48,11 @@ const MainScreen = () => {
     ];
 
     const skills = [
-        { name: "React", icon: "fa-brands fa-react", lvl: "80%" },
+        { name: "React", icon: "fa-brands fa-react", lvl: "[80%]" },
         { name: "Node", icon: "fa-brands fa-node", lvl: "80%" },
         { name: "JavaScript", icon: "fa-brands fa-js", lvl: "80%" },
-        { name: "HTML", icon: "fa-brands fa-html5", lvl: "90%" },
-        { name: "CSS", icon: "fa-brands fa-css3", lvl: "90%" },
+        { name: "HTML", icon: "fa-brands fa-html5", lvl: "80%" },
+        { name: "CSS", icon: "fa-brands fa-css3", lvl: "[90%]" },
         { name: "python", icon: "fa-brands fa-python", lvl: "75%" },
         { name: "Github", icon: "fa-brands fa-git-alt", lvl: "75%" },
         { name: "java", icon: "fa-brands fa-java", lvl: "50%" },
@@ -65,7 +65,7 @@ const MainScreen = () => {
     return (
         <div className="">
             <div
-                className=" h-screen w-screen  bg-cover center bg-fixed"
+                className=" h-screen w-screen  bg-contain"
                 style={{ backgroundImage: "url(img/spaceBg.jpg)" }}
             >
                 <NavBar links={links} scroll={handleScroll} />
