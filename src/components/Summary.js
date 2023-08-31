@@ -6,9 +6,7 @@ function Summary() {
         <div className="h-[40rem] center relative flex flex-wrap">
             <div className=" w-[40rem] center flex-col p-10 ">
                 <Fade top>
-                    <p className="text-[#F36C5D] text-5xl text-center z-10 mb-10 font-bold">
-                        Who am I?
-                    </p>
+                    <h1 className="text-5xl mb-10">Who am I?</h1>
                 </Fade>
                 <Fade left>
                     <p className="text-[#ffffff] text-xl text-center">

@@ -4,12 +4,14 @@ import Fade from "react-reveal/Fade";
 
 function Projects({ projects }) {
     return (
-        <div className="pt-48 pb-48 w-screen  flex flex-col items-center justify-center ">
-            <Fade>
-                <h1 className="text-[#F36C5D] w-full text-center text-8xl mb-10 font-bold effect-box,kkk">
-                    Projects
-                </h1>
-                <div className="w-[26rem] h-1 bg-white mb-20"></div>
+        <div className="pt-24 pb-24 w-full flex flex-col items-center">
+            <Fade right>
+                <div className="w-full flex flex-col pr-80 items-end mb-20">
+                    <h1 className="text-[#F36C5D] text-8xl mb-10 font-bold">
+                        Projects
+                    </h1>
+                    <div className="w-[34rem] h-1 bg-white"></div>
+                </div>
             </Fade>
             <div className="center flex-wrap">
                 {projects.map((project, index) => (

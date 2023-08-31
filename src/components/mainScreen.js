@@ -47,16 +47,22 @@ const MainScreen = () => {
         { name: "Contact", icon: "envelope", ref: "navContact" },
     ];
 
-    const skills = [
-        { name: "React", icon: "fa-brands fa-react", lvl: "[80%]" },
-        { name: "Node", icon: "fa-brands fa-node", lvl: "80%" },
-        { name: "JavaScript", icon: "fa-brands fa-js", lvl: "80%" },
-        { name: "HTML", icon: "fa-brands fa-html5", lvl: "80%" },
-        { name: "CSS", icon: "fa-brands fa-css3", lvl: "[90%]" },
-        { name: "python", icon: "fa-brands fa-python", lvl: "75%" },
-        { name: "Github", icon: "fa-brands fa-git-alt", lvl: "75%" },
-        { name: "java", icon: "fa-brands fa-java", lvl: "50%" },
-    ];
+    const skills = {
+        languages: [
+            { name: "Python", icon: "fa-brands fa-python", lvl: "75%" },
+            { name: "JavaScript", icon: "fa-brands fa-js", lvl: "80%" },
+            { name: "HTML", icon: "fa-brands fa-html5", lvl: "80%" },
+            { name: "Java", icon: "fa-brands fa-java", lvl: "50%" },
+            { name: "CSS", icon: "fa-brands fa-css3", lvl: "[90%]" },
+        ],
+
+        technologies: [
+            { name: "Github", icon: "fa-brands fa-git-alt", lvl: "75%" },
+            { name: "React", icon: "fa-brands fa-react", lvl: "[80%]" },
+            { name: "Node", icon: "fa-brands fa-node", lvl: "80%" },
+            { name: "Windows", icon: "fa-brands fa-microsoft", lvl: "80%" },
+        ],
+    };
 
     const handleScroll = (ref) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -65,18 +71,21 @@ const MainScreen = () => {
     return (
         <div className="">
             <div
-                className=" h-screen w-screen  bg-contain"
+                className=" h-screen w-screen  bg-contain flex justify-center"
                 style={{ backgroundImage: "url(img/spaceBg.jpg)" }}
             >
                 <NavBar links={links} scroll={handleScroll} />
-                <div className="absolute left-[10%] top-[40%] font-bold font-mono text-white">
-                    <h1 className="  typewriter">Hello,</h1>
-                    <h1 className=" text-6xl  typewriter2 h-[4.3rem]">
+                <div className="absolute left-[10%] top-[40%] font-bold font-mono ">
+                    <h1 className="typewriter text-white">Hello,</h1>
+                    <h1 className=" text-6xl typewriter2 h-[4.3rem] text-white">
                         I am Samuel Marchetti.
                     </h1>
                 </div>
             </div>
-            <div className="bg-black z-1" ref={navSummary}>
+            <div
+                className="bg-gradient-to-b from-black via-[#0C101B] to-black z-1"
+                ref={navSummary}
+            >
                 <Summary />
                 <div ref={navProjects}>
                     <Projects projects={projects} />
