@@ -8,7 +8,7 @@ import skills from "./SkillInfo";
 import Contact from "./Contact";
 import AppIcon from "./AppIcon";
 
-const MainScreen = () => {
+const Main = () => {
     const navHome = useRef(null);
     const navSummary = useRef(null);
     const navProjects = useRef(null);
@@ -103,4 +103,4 @@ const MainScreen = () => {
     );
 };
 
-export default MainScreen;
+export default Main;
