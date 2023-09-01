@@ -51,7 +51,7 @@ function ProjectBox({
                     )}
 
                     <div className="center">
-                        <a href={github} target="_blank">
+                        <a href={github} target="_blank" rel="noreferrer">
                             <img
                                 src="img/github-mark/github-mark-white.png"
                                 className="w-10 ml-5"

@@ -31,7 +31,7 @@ function Summary() {
                 <Fade right>
                     <img
                         src={"./img/program.png"}
-                        alt="Image Program"
+                        alt="computer"
                         className="object-contain"
                     />
                 </Fade>

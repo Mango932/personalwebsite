@@ -1,76 +1,38 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import NavBar from "./NavBar";
 import Summary from "./Summary";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import projects from "./ProjectInfo";
+import skills from "./SkillInfo";
+import Contact from "./Contact";
+import AppIcon from "./AppIcon";
 
 const MainScreen = () => {
-    const projects = [
-        {
-            name: "Life Counter App",
-            description:
-                "Mobile app built with react native used to keep track of life totals for a card game, has 2 different layouts with player customization.",
-            image: [
-                "img/LCA4.png",
-                "img/LCA1.png",
-                "img/LCA3.png",
-                "img/LCA4.png",
-            ],
-            imgLayout: "mobile",
-            github: "https://github.com/Mango932/LifeCounterMTG",
-        },
-        {
-            name: "Personal Website",
-            description:
-                "Website built using react framework with paralax effect and responsive hover animation as well as fade component scroll animations",
-            image: ["img/Personal1.png", "img/Personal2.png"],
-            github: "https://github.com/Mango932/personalwebsite",
-        },
-        {
-            name: "Draco Constelation",
-            description:
-                "Website built with html/js/css. Information about the draco constelation as well as a visual representation of the constelation with clickable stars",
-            image: ["img/Draco1.png", "img/Draco2.png"],
-            imgLayout: "website",
-            github: "https://github.com/Mango932/draco_constellation",
-        },
-    ];
-
+    const navHome = useRef(null);
     const navSummary = useRef(null);
     const navProjects = useRef(null);
+    const navSkills = useRef(null);
+    const navContact = useRef(null);
 
     const links = [
-        { name: "Home", icon: "house", ref: "navHome" },
+        { name: "Home", icon: "house", ref: navHome },
         { name: "Info", icon: "user", ref: navSummary },
         { name: "Projects", icon: "code", ref: navProjects },
-        { name: "Skills", icon: "brain", ref: "navSkills" },
-        { name: "Contact", icon: "envelope", ref: "navContact" },
+        { name: "Skills", icon: "brain", ref: navSkills },
+        { name: "Contact", icon: "envelope", ref: navContact },
     ];
-
-    const skills = {
-        languages: [
-            { name: "Python", icon: "fa-brands fa-python", lvl: "75%" },
-            { name: "JavaScript", icon: "fa-brands fa-js", lvl: "80%" },
-            { name: "HTML", icon: "fa-brands fa-html5", lvl: "80%" },
-            { name: "Java", icon: "fa-brands fa-java", lvl: "50%" },
-            { name: "CSS", icon: "fa-brands fa-css3", lvl: "[90%]" },
-        ],
-
-        technologies: [
-            { name: "Github", icon: "fa-brands fa-git-alt", lvl: "75%" },
-            { name: "React", icon: "fa-brands fa-react", lvl: "[80%]" },
-            { name: "Node", icon: "fa-brands fa-node", lvl: "80%" },
-            { name: "Windows", icon: "fa-brands fa-microsoft", lvl: "80%" },
-        ],
-    };
 
     const handleScroll = (ref) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
     };
 
+    const [bounce, setBounce] = useState(false);
+
     return (
         <div className="">
             <div
+                ref={navHome}
                 className=" h-screen w-screen  bg-contain flex justify-center"
                 style={{ backgroundImage: "url(img/spaceBg.jpg)" }}
             >
@@ -90,7 +52,52 @@ const MainScreen = () => {
                 <div ref={navProjects}>
                     <Projects projects={projects} />
                 </div>
-                <Skills skills={skills} />
+                <div ref={navSkills}>
+                    <Skills skills={skills} />
+                </div>
+                <div ref={navContact}>
+                    <Contact />
+                </div>
+                <div className="flex mt-10 justify-center bg-[#0C101B] pt-5 pb-5">
+                    <button
+                        onMouseEnter={() => setBounce(true)}
+                        onMouseLeave={() => setBounce(false)}
+                        onClick={() => handleScroll(navHome)}
+                        className="mr-10"
+                    >
+                        <AppIcon iconName="chevron-up" bounce={bounce} />
+                    </button>
+                    <a
+                        href="https://github.com/Mango932"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:scale-110 transition-all"
+                    >
+                        <AppIcon
+                            iconName="fa-brands fa-github"
+                            styles={"fa-4x"}
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/samuel-marchetti-4100bb205/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="ml-3 hover:scale-110 transition-all"
+                    >
+                        <AppIcon
+                            iconName="fa-brands fa-linkedin"
+                            styles={"fa-4x"}
+                        />
+                    </a>
+                    <button
+                        onMouseEnter={() => setBounce(true)}
+                        onMouseLeave={() => setBounce(false)}
+                        className="ml-10"
+                        onClick={() => handleScroll(navHome)}
+                    >
+                        <AppIcon iconName="chevron-up" bounce={bounce} />
+                    </button>
+                </div>
             </div>
         </div>
     );

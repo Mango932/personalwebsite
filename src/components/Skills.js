@@ -35,7 +35,7 @@ function Skills({ skills }) {
                 </Fade>
                 <div className="flex w-full justify-end">
                     {technologies.map((skill, index) => (
-                        <Fade delay={(index + 2) * 200}>
+                        <Fade delay={(index + 1) * 200}>
                             <SkillComponent
                                 name={skill.name}
                                 icon={skill.icon}

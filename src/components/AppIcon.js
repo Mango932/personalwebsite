@@ -5,12 +5,12 @@ const AppIcon = ({
     iconName,
     color = "white",
     bounce = false,
-    style = "fa-2x",
+    styles = "fa-2x",
 }) => (
     <FontAwesomeIcon
         icon={iconName}
         color={color}
-        className={style}
+        className={styles}
         bounce={bounce}
     />
 );
