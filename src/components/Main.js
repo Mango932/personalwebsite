@@ -30,7 +30,7 @@ const Main = () => {
     const [bounce, setBounce] = useState(false);
 
     return (
-        <div className="min-w-[600px]">
+        <div className="min-w-[700px]">
             <div
                 ref={navHome}
                 className=" h-screen w-full flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover "
@@ -55,7 +55,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="min-w-[600px] bg-gradient-to-b from-black via-[#0C101B] to-black">
+            <div className="min-w-[700px] bg-gradient-to-b from-black via-[#0C101B] to-black">
                 <div ref={navSummary}>
                     <Summary />
                 </div>
