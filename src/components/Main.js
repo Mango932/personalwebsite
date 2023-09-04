@@ -30,15 +30,15 @@ const Main = () => {
     const [bounce, setBounce] = useState(false);
 
     return (
-        <div className="">
+        <div className="w-screen">
             <div
                 ref={navHome}
-                className=" h-screen w-screen flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover"
+                className=" h-screen w-full flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover "
                 style={{
                     backgroundImage: "url(img/spaceBg.jpg)",
                 }}
             >
-                <div className="h-screen w-screen flex flex-col absolute">
+                <div className="h-full w-full flex flex-col absolute">
                     <NavBar links={links} scroll={handleScroll} />
                     <div className="w-full font-mono pl-[10%] mt-[10%]">
                         <div className="w-32 2xl:w-52 mt-24 lg:mt-0 ">

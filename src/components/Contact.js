@@ -7,7 +7,7 @@ function Contact() {
         <Fade>
             <div className="flex items-center flex-col pt-32 pb-24">
                 <h1>Contact</h1>
-                <div className="h-1 w-[24rem] min-[1392px]:w-[34rem] bg-white mb-20" />
+                <div className="h-1 w-[24rem] md:w-[34rem] bg-white mb-20" />
                 <form
                     action="https://formsubmit.co/sammarchetti05@gmail.com"
                     method="POST"
