@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 function Summary() {
     return (
-        <div className="h-[40rem] center relative flex flex-wrap">
+        <div className=" center relative flex flex-wrap pt-24 pb-24">
             <div className=" w-[40rem] center flex-col p-10 ">
                 <Fade top>
                     <h1 className="text-5xl mb-10">Who am I?</h1>
@@ -26,8 +26,9 @@ function Summary() {
                     </p>
                 </Fade>
             </div>
-            <div className="h-80 w-1 hidden bg-[#E9F8F9] lg:block"></div>
-            <div className="w-[40rem] ">
+
+            <div className="w-[40rem] flex  items-center  justify-center">
+                <div className="h-80 w-1 hidden bg-[#E9F8F9] xl:block transition-all"></div>
                 <Fade right>
                     <img
                         src={"./img/program.png"}

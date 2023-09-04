@@ -33,19 +33,30 @@ const Main = () => {
         <div className="">
             <div
                 ref={navHome}
-                className=" h-screen w-screen  bg-contain flex justify-center"
-                style={{ backgroundImage: "url(img/spaceBg.jpg)" }}
+                className=" h-screen w-screen flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover"
+                style={{
+                    backgroundImage: "url(img/spaceBg.jpg)",
+                }}
             >
-                <NavBar links={links} scroll={handleScroll} />
-                <div className="absolute left-[10%] top-[40%] font-bold font-mono ">
-                    <h1 className="typewriter text-white">Hello,</h1>
-                    <h1 className=" text-6xl typewriter2 h-[4.3rem] text-white">
-                        I am Samuel Marchetti.
-                    </h1>
+                <div className="h-screen w-screen flex flex-col absolute">
+                    <NavBar links={links} scroll={handleScroll} />
+                    <div className="w-full font-mono pl-[10%] mt-[10%]">
+                        <div className="w-32 2xl:w-52 mt-24 lg:mt-0 ">
+                            <div className=" typewriter text-white text-4xl 2xl:text-6xl font-bold transition-all">
+                                Hello,
+                            </div>
+                        </div>
+                        <div className="mt-10 w-[28rem] 2xl:w-[46rem] ">
+                            <div className="typewriter2 text-white text-4xl 2xl:text-6xl font-bold transition-all">
+                                I am Samuel Marchetti.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div
-                className="bg-gradient-to-b from-black via-[#0C101B] to-black z-1"
+                className="bg-gradient-to-b from-black via-[#0C101B] to-black"
                 ref={navSummary}
             >
                 <Summary />

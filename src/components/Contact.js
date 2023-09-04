@@ -6,8 +6,8 @@ function Contact() {
     return (
         <Fade>
             <div className="flex items-center flex-col pt-32 pb-24">
-                <h1>Contact Me</h1>
-                <div className="h-1 w-[34rem] bg-white mb-20" />
+                <h1>Contact</h1>
+                <div className="h-1 w-[24rem] min-[1392px]:w-[34rem] bg-white mb-20" />
                 <form
                     action="https://formsubmit.co/sammarchetti05@gmail.com"
                     method="POST"
@@ -20,7 +20,7 @@ function Contact() {
                             type="text"
                             name="name"
                             required
-                            className="w-96 h-10 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top flex-wrap"
+                            className="w-[22rem] md:w-[30rem] h-10 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top flex-wrap"
                         />
                     </div>
                     <div className="flex">
@@ -29,7 +29,7 @@ function Contact() {
                             type="email"
                             name="email"
                             required
-                            className="w-96 h-10 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top"
+                            className="w-[22rem] md:w-[30rem] h-10 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top"
                         />
                     </div>
                     <div className="flex mb-5">
@@ -37,13 +37,13 @@ function Contact() {
                         <textarea
                             name="message"
                             required
-                            className="w-96 h-32 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top pb-24"
+                            className="w-[22rem] md:w-[30rem] h-32 bg-[#202124] border-white border-2 rounded-xl text-white p-2 align-text-top pb-24"
                         />
                     </div>
                     <button
                         type="submit"
                         onClick={() => console.log("Clicked")}
-                        className="hover:opacity-60 hover:scale-110 transition-all"
+                        className="hover:opacity-60 hover:scale-110 transition-all mt-5"
                     >
                         <AppIcon iconName="circle-check" styles="fa-3x" />
                     </button>

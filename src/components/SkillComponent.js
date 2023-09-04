@@ -4,7 +4,7 @@ import AppIcon from "./AppIcon";
 function SkillComponent({ name, icon, lvl, color }) {
     console.log(lvl);
     return (
-        <div className="w-48 h-48 mr-5 ml-5 center flex-col bg-[#202124] border-white border-2 rounded-full hover:scale-[120%] transition-all">
+        <div className="w-48 h-48 m-5 center flex-col bg-[#202124] border-white border-2 rounded-full hover:scale-[120%] transition-all">
             <div className="group-hover:opacity-20">
                 <AppIcon iconName={icon} styles={"fa-6x"} />
             </div>

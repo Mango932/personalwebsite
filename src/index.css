@@ -77,7 +77,6 @@
 }
 
 .typewriter {
-    font-size: 4rem;
     overflow: hidden;
     border-right: 0.1em solid transparent;
     white-space: nowrap;
@@ -86,7 +85,6 @@
 }
 
 .typewriter2 {
-    font-size: 4rem;
     overflow: hidden;
     border-right: 0.1em solid transparent;
     white-space: nowrap;
@@ -159,4 +157,17 @@ p {
     color: #ffffff;
     font-size: 1.25rem /* 20px */;
     line-height: 1.75rem /* 28px */;
+}
+
+.ch:checked ~ .barIcon {
+    display: none;
+}
+
+.ch:checked ~ .closeIcon {
+    display: block;
+}
+
+.ch:checked ~ .slider {
+    right: -2px;
+    top: -2px;
 }
