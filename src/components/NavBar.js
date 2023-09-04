@@ -11,7 +11,7 @@ function NavBar({ links, scroll }) {
             <div className="barIcon absolute left-5 top-5 lg:hidden flex items-center group">
                 <AppIcon iconName="bars" styles={"fa-4x"}></AppIcon>
             </div>
-            <div className="closeIcon absolute left-5 top-5 lg:hidden  hidden">
+            <div className="closeIcon absolute left-5 top-5 lg:invisible  hidden">
                 <AppIcon iconName="close" styles={"fa-4x"}></AppIcon>
             </div>
 
