@@ -21,9 +21,18 @@ const Main = () => {
         { name: "Projects", icon: "code", ref: navProjects },
         { name: "Skills", icon: "brain", ref: navSkills },
         { name: "Contact", icon: "envelope", ref: navContact },
+        { name: "Resume", ref: "resume" },
     ];
 
     const handleScroll = (ref) => {
+        if (ref === "resume") {
+            window.open(
+                "https://docs.google.com/document/d/1erVV6FOGCEcJJk-iHpnRQSkXcMeP_D-ZR5E0JvV83wc/edit#heading=h.fvuum52qygug",
+                "_blank"
+            );
+            return;
+        }
+
         ref.current?.scrollIntoView({ behavior: "smooth" });
     };
 
