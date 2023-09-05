@@ -12,17 +12,18 @@ function Summary() {
                     <p className="text-[#ffffff] text-xl text-center">
                         Passionate{" "}
                         <span className="font-bold">
-                            a Fullstack Web Developer
+                            Fullstack Web Developer
                         </span>{" "}
-                        committed to crafting captivating websites, dynamic web
-                        applications, and user-centric mobile solutions.
-                        Blending design sensibilities with{" "}
+                        studying computer engineering at the university of
+                        Ottawa. Committed to crafting captivating websites,
+                        dynamic web applications, and user-centric mobile
+                        solutions. Blending design sensibilities with{" "}
                         <span className="font-bold">technical expertise</span>{" "}
                         to create seamless digital experiences.{" "}
                         <span className="font-bold">
                             Specialized in front end developnent
                         </span>{" "}
-                        and is looking for new oppurtunities in this field.
+                        and is looking for opportunities to make a difference.
                     </p>
                 </Fade>
             </div>

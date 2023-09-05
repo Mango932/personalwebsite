@@ -46,9 +46,9 @@ const Main = () => {
                                 Hello,
                             </div>
                         </div>
-                        <div className="mt-10 w-[31rem] 2xl:w-[46rem] ">
+                        <div className="mt-10 w-[30rem] 2xl:w-[45rem] ">
                             <div className="typewriter2 text-white text-4xl 2xl:text-6xl font-bold transition-all">
-                                I am Samuel Marchetti.
+                                I am Samuel Marchetti
                             </div>
                         </div>
                     </div>

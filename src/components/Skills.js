@@ -8,8 +8,8 @@ function Skills({ skills }) {
     return (
         <div className="pt-24 pb-24 w-full flex flex-col items-center">
             <Fade left>
-                <div className="w-full flex flex-col min-[1392px]:pr-[48rem] items-center mb-20">
-                    <div className="flex flex-col items-center min-[1392px]:items-start ">
+                <div className="w-full flex flex-col min-[1600px]:pr-[65rem] items-center mb-20">
+                    <div className="flex flex-col items-center min-[1600px]:items-start ">
                         <h1>Skills</h1>
                         <div className="h-1 w-[24rem] min-[1392px]:w-[34rem] bg-white" />
                     </div>
