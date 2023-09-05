@@ -26,10 +26,7 @@ const Main = () => {
 
     const handleScroll = (ref) => {
         if (ref === "resume") {
-            window.open(
-                "https://docs.google.com/document/d/1erVV6FOGCEcJJk-iHpnRQSkXcMeP_D-ZR5E0JvV83wc/edit#heading=h.fvuum52qygug",
-                "_blank"
-            );
+            window.open("Resume.pdf", "_blank");
             return;
         }
 
