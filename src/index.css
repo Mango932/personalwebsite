@@ -171,3 +171,12 @@ p {
     right: -2px;
     top: -2px;
 }
+
+.back {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(
+        circle,
+        rgba(22, 29, 50, 1) 0%,
+        rgba(0, 0, 0, 1) 80%
+    );
+}

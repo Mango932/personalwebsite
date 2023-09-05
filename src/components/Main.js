@@ -55,7 +55,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="min-w-[700px] bg-gradient-to-b from-black via-[#0C101B] to-black">
+            <div className="back min-w-[700px]">
                 <div ref={navSummary}>
                     <Summary />
                 </div>
