@@ -36,18 +36,44 @@ function ProjectBox({
                             />
                         </div>
                     ) : (
+                        <></>
+                    )}
+                    {imgLayout === "website" ? (
                         <div className="h-[20rem] w-full center relative pb-12 ">
                             <img
                                 src={image[0]}
-                                className="w-48 absolute top-5 left-5 group-hover:left-10 group-hover:top-0 transition-all duration-500"
+                                className="w-48 absolute top-5 left-5 group-hover:left-10 group-hover:top-[-2rem] transition-all duration-500"
                                 alt=""
                             />
                             <img
                                 src={image[1]}
-                                className="w-48 absolute top-16 right-5 group-hover:right-10 group-hover:top-40 transition-all duration-500"
+                                className="w-48 absolute top-16 right-5 group-hover:right-10 group-hover:top-[7rem] transition-all duration-500"
                                 alt=""
                             />
                         </div>
+                    ) : (
+                        <></>
+                    )}
+                    {imgLayout === "website2" ? (
+                        <div className="h-[20rem] w-full center relative pb-12 ">
+                            <img
+                                src={image[0]}
+                                className="w-48 absolute top-5 left-10 group-hover:left-10 group-hover:top-[-2rem] transition-all duration-500"
+                                alt=""
+                            />
+                            <img
+                                src={image[1]}
+                                className="w-48 absolute top-16 right-5 group-hover:right-0 group-hover:top-[5rem] transition-all duration-500"
+                                alt=""
+                            />
+                            <img
+                                src={image[2]}
+                                className="w-48 absolute top-32 left-20 group-hover:left-10 group-hover:top-[12rem] transition-all duration-500"
+                                alt=""
+                            />
+                        </div>
+                    ) : (
+                        <></>
                     )}
 
                     <div className="center">

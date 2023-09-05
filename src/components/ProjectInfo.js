@@ -11,7 +11,8 @@ const projects = [
         name: "Personal Website",
         description:
             "Website built using react framework with paralax effect and responsive hover animation as well as fade component scroll animations",
-        image: ["img/Personal1.png", "img/Personal2.png"],
+        image: ["img/Personal1.png", "img/Personal2.png", "img/Personal3.png"],
+        imgLayout: "website2",
         github: "https://github.com/Mango932/personalwebsite",
     },
     {
