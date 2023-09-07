@@ -15,7 +15,7 @@ function Skills({ skills }) {
                     </div>
                 </div>
             </Fade>
-            <div className="w-full flex items-center mb-10 mt-10 justify-center p-5 flex-col min-[1392px]:flex-row">
+            <div className="w-full flex items-center mb-10 mt-10 justify-center p-5 flex-col min-[1392px]:flex-row pr-24 pl-24">
                 <Fade>
                     <h2 className="text-2xl ">Languages:</h2>
                 </Fade>
@@ -31,7 +31,7 @@ function Skills({ skills }) {
                     ))}
                 </div>
             </div>
-            <div className="w-full flex items-center mb-10 mt-10 justify-center p-5 flex-col min-[1392px]:flex-row">
+            <div className="w-full flex items-center mb-10 mt-10 justify-center p-5 flex-col min-[1392px]:flex-row pr-24 pl-24">
                 <Fade>
                     <h2 className="text-2xl">Technologies:</h2>
                 </Fade>

@@ -44,7 +44,7 @@ const Main = () => {
                     backgroundImage: "url(img/spaceBg.jpg)",
                 }}
             >
-                <div className="h-full w-full flex flex-col absolute">
+                <div className="h-full w-full flex flex-col absolute min-w-[700px]">
                     <NavBar links={links} scroll={handleScroll} />
                     <div className="w-full font-mono pl-[10%] mt-[10%]">
                         <div className="w-32 2xl:w-52 mt-24 lg:mt-0 ">
