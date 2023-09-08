@@ -36,7 +36,7 @@ const Main = () => {
     const [bounce, setBounce] = useState(false);
 
     return (
-        <div className="absolute w-screen">
+        <div className="w-screen">
             <div
                 ref={navHome}
                 className=" h-screen w-full flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover "
