@@ -36,7 +36,7 @@ const Main = () => {
     const [bounce, setBounce] = useState(false);
 
     return (
-        <div className="min-w-[700px]">
+        <div className="absolute w-screen">
             <div
                 ref={navHome}
                 className=" h-screen w-full flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover "
@@ -44,7 +44,7 @@ const Main = () => {
                     backgroundImage: "url(img/spaceBg.jpg)",
                 }}
             >
-                <div className="h-full w-full flex flex-col absolute min-w-[700px]">
+                <div className="h-full w-screen flex flex-col absolute">
                     <NavBar links={links} scroll={handleScroll} />
                     <div className="w-full font-mono pl-[10%] mt-[10%]">
                         <div className="w-32 2xl:w-52 mt-24 lg:mt-0 ">
@@ -61,7 +61,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="back min-w-[700px]">
+            <div className="w-screen">
                 <div ref={navSummary}>
                     <Summary />
                 </div>
