@@ -15,7 +15,7 @@ function NavBar({ links, scroll }) {
                 <AppIcon iconName="close" styles={"fa-4x"}></AppIcon>
             </div>
 
-            <div className="slider top-[-100rem] right-[-15rem] pr-10 pl-10 justify-center items-center absolute lg:static lg:left-auto  bg-[#202124] flex flex-col lg:flex-row border-2 lg:border-0 lg:bg-transparent border-white transition-all duration-500">
+            <div className="slider top-[-50rem] right-0 pr-10 pl-10 justify-center items-center absolute lg:static lg:left-auto  bg-[#202124] flex flex-col lg:flex-row border-2 lg:border-0 lg:bg-transparent border-white transition-all duration-500">
                 {links.map((link) => (
                     <button
                         className=" w-16 h-16 m-8 flex justify-center items-center text-white effect-box text-lg font-semibold"

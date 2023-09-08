@@ -61,7 +61,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="w-screen">
+            <div className="back w-screen">
                 <div ref={navSummary}>
                     <Summary />
                 </div>

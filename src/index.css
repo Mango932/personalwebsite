@@ -168,7 +168,6 @@ p {
 }
 
 .ch:checked ~ .slider {
-    right: -2px;
     top: -2px;
 }
 
