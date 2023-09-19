@@ -11,9 +11,9 @@ function ProjectBox({
     github,
 }) {
     return (
-        <div className="w-96 h-[44rem] center m-10 hover:scale-[115%] transition-all flex-col group">
+        <div className="shad w-96 h-[44rem] center m-10 hover:scale-[115%] transition-all flex-col group rounded-xl duration-500">
             <Fade bottom>
-                <div className=" w-full h-full flex center flex-col p-5 text-center bg-[#202124] duration-500 rounded-xl shadow-inner border-white border-2">
+                <div className=" w-full h-full flex center flex-col p-5 text-center bg-[#202124] rounded-xl border-white border-2">
                     <h2 className="leading-[120%]">{name}</h2>
                     <p className="text-white mb-12 text-l">{description}</p>
 

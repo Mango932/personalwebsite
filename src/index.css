@@ -179,3 +179,7 @@ p {
         rgba(0, 0, 0, 1) 80%
     );
 }
+
+.shad:hover {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.528);
+}
