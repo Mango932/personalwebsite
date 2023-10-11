@@ -53,7 +53,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="mt-10 max-w-[30rem] sm:max-w-full 2xl:w-[45rem] ">
-                            <div className=" text-white text-2xl 2xl:text-6xl font-bold transition-all">
+                            <div className="typewriter2 text-white text-2xl 2xl:text-6xl font-bold transition-all">
                                 I am Samuel Marchetti
                             </div>
                         </div>
