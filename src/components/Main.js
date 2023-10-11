@@ -36,24 +36,24 @@ const Main = () => {
     const [bounce, setBounce] = useState(false);
 
     return (
-        <div className="w-screen min-w-[828px]">
+        <div className="w-screen">
             <div
                 ref={navHome}
-                className=" h-screen w-full flex lg:bg-right flex-col bg-[length:800%_50%] bg-center lg:bg-cover "
+                className=" h-screen w-full flex md:bg-right flex-col bg-[length:800%_50%] bg-center md:bg-cover "
                 style={{
                     backgroundImage: "url(img/spaceBg.jpg)",
                 }}
             >
-                <div className="h-full w-screen flex flex-col absolute min-w-[828px]">
+                <div className="h-full w-screen flex flex-col absolute min-w">
                     <NavBar links={links} scroll={handleScroll} />
                     <div className="w-full font-mono pl-[10%] mt-[10%]">
-                        <div className="w-32 2xl:w-52 mt-24 lg:mt-0 ">
-                            <div className=" typewriter text-white text-4xl 2xl:text-6xl font-bold transition-all">
+                        <div className="w-32 2xl:w-52 mt-24 md:mt-0 ">
+                            <div className=" typewriter text-white text-2xl 2xl:text-6xl font-bold transition-all">
                                 Hello,
                             </div>
                         </div>
-                        <div className="mt-10 w-[30rem] 2xl:w-[45rem] ">
-                            <div className="typewriter2 text-white text-4xl 2xl:text-6xl font-bold transition-all">
+                        <div className="mt-10 max-w-[30rem] sm:max-w-full 2xl:w-[45rem] ">
+                            <div className=" text-white text-2xl 2xl:text-6xl font-bold transition-all">
                                 I am Samuel Marchetti
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="back w-screen min-w-[828px]">
+            <div className="back w-screen">
                 <div ref={navSummary}>
                     <Summary />
                 </div>

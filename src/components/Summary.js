@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 function Summary() {
     return (
         <div className=" center relative flex flex-wrap pt-24 pb-24">
-            <div className=" w-[40rem] center flex-col p-10 ">
+            <div className=" max-w-[40rem] center flex-col p-10 ">
                 <Fade top>
                     <h1 className="text-5xl mb-10">Who am I?</h1>
                 </Fade>

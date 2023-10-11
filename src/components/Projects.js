@@ -8,8 +8,8 @@ function Projects({ projects }) {
             <Fade right>
                 <div className="w-full flex flex-col min-[1392px]:pl-[48rem] items-center mb-20">
                     <div className="flex flex-col items-center min-[1392px]:items-end ">
-                        <h1 className="text-8xl mb-10">Projects</h1>
-                        <div className="w-[24rem] min-[1392px]:w-[34rem] h-1 bg-white"></div>
+                        <h1 className="text-7xl mb-10">Projects</h1>
+                        <div className="w-[20rem] min-[1392px]:w-[34rem] h-1 bg-white"></div>
                     </div>
                 </div>
             </Fade>

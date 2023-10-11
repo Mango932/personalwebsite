@@ -11,7 +11,7 @@ function Skills({ skills }) {
                 <div className="w-full flex flex-col min-[1600px]:pr-[65rem] items-center mb-20">
                     <div className="flex flex-col items-center min-[1600px]:items-start ">
                         <h1>Skills</h1>
-                        <div className="h-1 w-[24rem] min-[1392px]:w-[34rem] bg-white" />
+                        <div className="h-1 w-[20rem] min-[1392px]:w-[34rem] bg-white" />
                     </div>
                 </div>
             </Fade>
