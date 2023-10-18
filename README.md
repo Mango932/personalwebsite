@@ -2,7 +2,7 @@
 
 ## Description
 
-Welcome to my personal website! This website is a platform where I showcase my projects, share my experiences, and connect with individuals passionate about technology and development. It's designed to provide insights into my work, interests, and insights in the world of web development.
+Welcome to my personal website! This website is a platform where I showcase my projects and connect with individuals passionate about technology and development.
 
 ## Features
 
