@@ -10,20 +10,17 @@ function Summary() {
                 </Fade>
                 <Fade left>
                     <p className="text-[#ffffff] text-xl text-center">
-                        Passionate{" "}
                         <span className="font-bold">
-                            Fullstack Web Developer
+                            Welcome to my personal website!
                         </span>{" "}
-                        studying computer engineering at the university of
-                        Ottawa. Committed to crafting captivating websites,
-                        dynamic web applications, and user-centric mobile
-                        solutions. Blending design sensibilities with{" "}
-                        <span className="font-bold">technical expertise</span>{" "}
-                        to create seamless digital experiences.{" "}
-                        <span className="font-bold">
-                            Specialized in front end developnent
-                        </span>{" "}
-                        and is looking for opportunities to make a difference.
+                        I am a second-year Computer Engineering student at the
+                        University of Ottawa, passionate about the intersection
+                        of software development and hardware integration. Here,
+                        you'll find my sofware and website related skills. From
+                        crafting responsive dashboards to developing
+                        cross-platform mobile applications, I invite you to
+                        explore my diverse portfolio and learn more about my
+                        journey in the world of technology.
                     </p>
                 </Fade>
             </div>
