@@ -18,7 +18,7 @@ const projects = [
     {
         name: "Personal Website",
         description:
-            "Website built using react framework with responsive mobile and computer layout with scroll and hover animations. Used the react Node.js for the backend and vercel to deploy the application",
+            "Website built using react framework with responsive mobile and computer layout with scroll and hover animations. Used the react Node.js for the backend and Netlify to deploy the application",
         image: ["img/Personal1.png", "img/Personal2.png", "img/Personal3.png"],
         imgLayout: "website2",
         github: "https://github.com/Mango932/personalwebsite",
