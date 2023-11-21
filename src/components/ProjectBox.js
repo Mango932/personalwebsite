@@ -44,12 +44,12 @@ function ProjectBox({
                         <div className="h-[20rem] w-full center relative pb-12 ">
                             <img
                                 src={image[0]}
-                                className="w-44 absolute top-5 left-5 group-hover:left-10 group-hover:top-[-2rem] transition-all duration-500"
+                                className="w-64 absolute top-5 left-5 group-hover:left-10 group-hover:top-[0rem] transition-all duration-500"
                                 alt=""
                             />
                             <img
                                 src={image[1]}
-                                className="w-44 absolute top-16 right-5 group-hover:right-10 group-hover:top-[7rem] transition-all duration-500"
+                                className="w-64 absolute top-28 right-5 group-hover:right-10 group-hover:top-[9.5rem] transition-all duration-500"
                                 alt=""
                             />
                         </div>
