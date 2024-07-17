@@ -13,7 +13,7 @@ function Summary() {
                         <span className="font-bold">
                             Welcome to my personal website!
                         </span>{" "}
-                        I am a second-year Computer Engineering student at the
+                        I am a third-year Computer Engineering student at the
                         University of Ottawa, passionate about the intersection
                         of software development and hardware integration. Here,
                         you'll find my sofware and website related skills. From

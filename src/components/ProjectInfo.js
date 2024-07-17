@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: "Go Hotel",
+        description:
+            "Hotel booking website that allows users to search and book hotels. Employees can login and manage the hotel booking and renting information. Build with Next.js, aceternity and postgres database.",
+        image: ["img/GoHotel1.png", "img/GoHotel2.png", "img/GoHotel3.png"],
+        imgLayout: "website2",
+        github: "https://github.com/Mango932/gohotel",
+    },
+    {
         name: "Green Glimpse",
         description:
             "A comprehensive tool for analyzing and visualizing the complete emissions footprint across a company's operations chain, from raw material sourcing to product delivery. Utilizing AI, IoT, and 5G for real-time, transparent carbon tracking.",
@@ -14,14 +22,6 @@ const projects = [
         image: ["img/LCA4.png", "img/LCA1.png", "img/LCA3.png", "img/LCA4.png"],
         imgLayout: "mobile",
         github: "https://github.com/Mango932/LifeCounterMTG",
-    },
-    {
-        name: "Personal Website",
-        description:
-            "Website built using react framework with responsive mobile and computer layout with scroll and hover animations. Used the react Node.js for the backend and Netlify to deploy the application",
-        image: ["img/Personal1.png", "img/Personal2.png", "img/Personal3.png"],
-        imgLayout: "website2",
-        github: "https://github.com/Mango932/personalwebsite",
     },
 ];
 
